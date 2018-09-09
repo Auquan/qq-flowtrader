@@ -38,7 +38,9 @@ def findSumDieRoll(n):
 	##################################
 	# n is a float
 	sumRolls = n/2 # Replace me with your answer
-
+	  /* there are several posibilities, first if you have n=2, then first 1 is followed by 2 or 3 or 4 or 5 or 6, or 2 is followed by (3 or 4 or 5 or 6) and so on.
+	     so the sequence would be (1,2)(1,3)(1,4)(1,5)(1,6),(2,3)(2,4)(2,5)(2,6) and same for 3,4,5,6.	
+         */
 	return round(sumRolls, 2)
 
 def findNumberOfRolls(n):
@@ -47,7 +49,11 @@ def findNumberOfRolls(n):
 	##################################
 	# n is a float
 	numRolls = n/2	# Replace me with your answer
-
+	/* If you have an M sided die and you run N trials, the probability they are increasing is just (MCN)/M^N.
+This is simply because there are (MCN) ways to get increasing die rolls (all of which are equally likely) and there are M^N possible ways to roll the dice (again, all of which are equally likely).
+	
+	
+   */
 	return round(numRolls, 2)
 
 if __name__ == "__main__":
